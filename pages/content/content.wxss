@@ -1,0 +1,10 @@
+@import '/pages/content-temp/content-temp.wxss';
+.slides{
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 30rpx;
+}
+.swimg{
+  width: 100%;
+  height: 100%;
+}

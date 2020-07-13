@@ -1,0 +1,60 @@
+/* pages/content-temp/content-temp.wxss */
+.outer{
+  display: flex;
+  margin: 0 20rpx;
+  flex-direction: column;
+  background-color: #eee;
+  border-radius: 20rpx;
+  margin-bottom: 12rpx;
+}
+.header{
+  margin: 10rpx auto auto 13rpx;
+  display: flex;
+}
+.avatar{
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: middle;
+  margin-right: 30rpx;
+}
+.info{
+  font-size: 32rpx;
+  font-family: sans-serif;
+}
+.title{
+  font-weight: 600;
+  font-size: 38rpx;
+  margin: 15rpx auto 15rpx 13rpx;
+}
+.mainimg{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.content{
+  text-indent: 32rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align:justify;
+}
+.tail{
+  display: flex;
+  margin-top: 15rpx;
+}
+.star{
+  width: 34rpx;
+  height: 34rpx;
+  vertical-align: middle;
+  padding-left: 12rpx;
+}
+.t_info{
+  font-size: 30rpx;
+  font-family: sans-serif;
+  padding-right: 18rpx;
+  padding-left: 10rpx;
+}

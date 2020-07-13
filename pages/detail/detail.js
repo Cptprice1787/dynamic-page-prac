@@ -1,58 +1,26 @@
+// pages/detail/detail.js
+let datas = require('../../datas/list-data')
+// @ts-ignore
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    isShow: true,
-  },
-  
-  navi(){
-    wx.navigateTo({
-      url: '/pages/content/content',
-    })
+    detail: {},
+    index: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getSetting();
-  },
-  getSetting () {
-    wx.getUserInfo({
-      success: (data) => {
-        console.log('getuserinfo', data);
-        this.setData({ userInfo: data.userInfo });
-      },
-    })
-    wx.getSetting({
-      success: (data) => {
-        console.log('getsetting', data)
-        if (data.authSetting["scope.userInfo"]) {
-          //授权
-          this.setData({
-            isShow: false
-          });
-        }
-        else {
-          //未授权
-          this.setData({
-            isShow: true
-          });
-        }
-      },
+    let index = options.index;
+    this.setData({
+      detail: datas.list_data[index],
+      index
     })
   },
-
-  get (data) {
-    if (data.detail.rawData) {
-      //点击允许，刷新
-      this.getSetting();
-    }
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

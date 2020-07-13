@@ -1,0 +1,15 @@
+<view class="background">
+  <view class="player"></view>
+  <view class="header">
+    <image class="avatar" src=""></image>
+    <view class="userId"></view>
+    <view class="info"></view>
+  </view>
+  <view class="title"></view>
+  <view class="operate">
+    <image class="star"></image>
+    <image class=""></image>
+  </view>
+  <view class="content"></view>
+  <button class="repost">转发此文章</button>
+</view>

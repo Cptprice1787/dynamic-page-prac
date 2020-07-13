@@ -1,0 +1,17 @@
+<template name="list">
+  <view class="outer">
+    <view class="header">
+      <image src="{{avatar}}" class="avatar"></image>
+      <view class="info">{{date}}</view>
+    </view>
+    <view class="title">{{title}}</view>
+    <image src="{{detail_img}}" class="mainimg"></image>
+    <view class="content">{{detail_content}}</view>
+    <view class="tail">
+      <image class="star" src="/images/icon/star.png"></image>
+      <view class="t_info">{{love_count}}</view>
+      <image class="star" src="/images/icon/view.png"></image>
+      <view class="t_info">{{attention_count}}</view>
+    </view>
+  </view>
+</template>

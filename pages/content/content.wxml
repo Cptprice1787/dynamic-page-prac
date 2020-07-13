@@ -1,0 +1,17 @@
+<!-- 引入模板 -->
+<import src='/pages/content-temp/content-temp.wxml'/>
+<view class="background">
+  <!-- 轮播图 -->
+  <view>
+    <swiper indicator-dots="true" indicator-color="darkgreen" indicator-active-color="white" class="slides">
+      <swiper-item wx:for="{{listArr}}" wx:key="index">
+        <image src="{{item.detail_img}}" class="swimg" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <block wx:for='{{listArr}}' wx:key='index'>
+  <view  catchtap='toDetail' data-index="{{index}}">
+    <template is="list" data="{{...item}}"></template>
+  </view>
+  </block>
+</view>

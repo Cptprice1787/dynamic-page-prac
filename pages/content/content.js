@@ -1,56 +1,29 @@
+// pages/content/content.js
+let datas = require('../../datas/list-data')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    isShow: true,
-  },
-  
-  navi(){
-    wx.navigateTo({
-      url: '/pages/content/content',
-    })
+    listArr: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getSetting();
-  },
-  getSetting () {
-    wx.getUserInfo({
-      success: (data) => {
-        console.log('getuserinfo', data);
-        this.setData({ userInfo: data.userInfo });
-      },
-    })
-    wx.getSetting({
-      success: (data) => {
-        console.log('getsetting', data)
-        if (data.authSetting["scope.userInfo"]) {
-          //授权
-          this.setData({
-            isShow: false
-          });
-        }
-        else {
-          //未授权
-          this.setData({
-            isShow: true
-          });
-        }
-      },
+    this.setData({
+      listArr: datas.list_data,
     })
   },
 
-  get (data) {
-    if (data.detail.rawData) {
-      //点击允许，刷新
-      this.getSetting();
-    }
+  toDetail (event) {
+    console.log('event',event);       //传入点击事件信息
+    let index = event.currentTarget.dataset.index;    //获取index索引
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index,
+    })
   },
 
   /**
