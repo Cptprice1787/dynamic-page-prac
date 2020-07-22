@@ -1,0 +1,11 @@
+<block wx:for='{{moviedata}}' wx:key='index'>
+<navigator url="/pages/movie__detial/movie_detail?index={{index}}" class='background'>
+  <image class="headimg" src="{{item.logo}}"></image>
+  <view class="detail">
+    <text class="name">{{item.name}}</text>
+    <text class="year">年份：{{item.year}}</text>
+    <text class="director">导演：{{item.director}}</text>
+  </view>
+  <text class="rating">{{item.rating}}</text>
+</navigator>
+</block>

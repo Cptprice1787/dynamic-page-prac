@@ -16,9 +16,9 @@ let list_data = [
     attention_count: 66,
     detail: '钢铁战队。。',
     music: {
-      dataUrl: 'http://up.mcyt.net/down/46100.mp3', // 音乐链接
-      title: 'IF-Ken Arai',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m701.music.126.net/20200718165538/f9aa52685e9e91c11cd6453b0d3179fb/jdyyaac/050e/055d/0f09/2daf492a7127e6bb8f4d8cb86da558df.m4a', // 音乐链接
+      title: '514',   // 音乐标题
+      coverImgUrl: 'http://p1.music.126.net/NvSC8YzqxS1v_YdTTOxEtg==/109951163827949383.jpg',
     },
     postId: 0
   },
@@ -38,9 +38,9 @@ let list_data = [
     attention_count: 66,
     detail: '有魅力的老男人。',
     music: {
-      dataUrl: 'http://www.ytmp3.cn/down/50395.mp3', // 音乐链接
-      title: '一路向北',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m701.music.126.net/20200718171914/ab366377424e3c30fbff5491575e66ef/jdyyaac/540f/5109/040b/ce3bedff0dfc45076ff43a0e15e81f60.m4a', // 音乐链接
+      title: '梦幻回廊',   // 音乐标题
+      coverImgUrl: 'http://p2.music.126.net/tgVnqp4N7HRjlQm75rsfNw==/7808731580866707.jpg',
     },
     postId: 1
   },
@@ -60,9 +60,9 @@ let list_data = [
     attention_count: 66,
     detail: '巨无霸教授。',
     music: {
-      dataUrl: 'http://www.ytmp3.cn/down/50355.mp3', // 音乐链接
-      title: '听海',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m10.music.126.net/20200718172010/6c16328d0218aee96b4b452c2e3b988e/ymusic/555a/565e/025a/b0bc9aa552a4949f104150210e90486e.mp3', // 音乐链接
+      title: 'U.N.オーエンは彼女なのか?',   // 音乐标题
+      coverImgUrl: 'http://p1.music.126.net/DQZWfISsCfzj-sOGsn_vIQ==/785051302254380.jpg',
     },
     postId: 2
   },
@@ -79,9 +79,9 @@ let list_data = [
     attention_count: 88,
     avatar: '/images/avatar/1.png',
     music: {
-      dataUrl: 'http://up.mcyt.net/down/46101.mp3', // 音乐链接
-      title: 'Sunset Jesus-Avicii',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m701.music.126.net/20200718172237/7322cae8da7a75a7388fbaf401d3ffb9/jdyyaac/555c/0208/065e/b6188df28b5b049c7613149a73f05ffd.m4a', // 音乐链接
+      title: '東方緋想天',   // 音乐标题
+      coverImgUrl: 'http://p1.music.126.net/F_uagwWsPXs3JXSymunFUQ==/804842511556161.jpg',
     },
     postId: 3
   },
@@ -98,9 +98,9 @@ let list_data = [
     author: '新华社',
     avatar: '/images/avatar/2.png',
     music: {
-      dataUrl: 'http://up.mcyt.net/down/46102.mp3', // 音乐链接
-      title: '汪峰 - 儿时',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m10.music.126.net/20200718172416/d28b7f6a73754fd2b92a4da46f97fc91/ymusic/515d/0f0e/070f/f7559e19ca8d64aa71db0e75f6914f21.mp3', // 音乐链接
+      title: '月まで届け、不死の煙',   // 音乐标题
+      coverImgUrl: 'http://p2.music.126.net/hx3Oxy612t6wZDPkvYtn3Q==/853221023177717.jpg',
     },
     postId: 4
   },
@@ -119,9 +119,9 @@ let list_data = [
     attention_count: 66,
     detail: '女神。。。',
     music: {
-      dataUrl: 'http://up.mcyt.net/down/46110.mp3', // 音乐链接
-      title: '曲婉婷 - 我的歌声里-(电视剧《在线爱》主题曲)',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m10.music.126.net/20200718172603/8b5597e424976c80c6a7603f464f3650/yyaac/555b/0608/525a/b1976e41311b2271ff5de06e9b403fd4.m4a', // 音乐链接
+      title: '偶像に世界を委ねて ～ Idoratrize World',   // 音乐标题
+      coverImgUrl: 'http://p2.music.126.net/z-b9pr_JqoM9-EDz6CECAA==/109951164258033228.jpg',
     },
     postId: 5
   },
@@ -140,9 +140,9 @@ let list_data = [
     attention_count: 66,
     detail: '女神2。。。',
     music: {
-      dataUrl: 'http://up.mcyt.net/down/46100.mp3', // 音乐链接
-      title: 'IF-Ken Arai',   // 音乐标题
-      coverImgUrl: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
+      dataUrl: 'http://m10.music.126.net/20200718172711/5d0ed318f9b9df053dce2cf412e55e9e/ymusic/565d/535f/045a/a74229e57ed557aed7fa308b01d95ba9.mp3', // 音乐链接
+      title: '上海紅茶館 ～ Chinese Tea',   // 音乐标题
+      coverImgUrl: 'http://p1.music.126.net/DQZWfISsCfzj-sOGsn_vIQ==/785051302254380.jpg',
     },
     postId: 6
   },

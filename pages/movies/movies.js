@@ -1,56 +1,28 @@
+// pages/movies/movies.js
+const MOVIE_URL = 'https://apikey.douban.com/v2/movie/top250';
+let movie = require('../../utils/movie_data');
+let appDatas = getApp();
+// console.log(movie)
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    isShow: true,
-  },
-  
-  navi(){
-    wx.switchTab({
-      url: '/pages/content/content',
-    })
+    moviedata:{},
+    index:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getSetting();
-  },
-  getSetting () {
-    wx.getUserInfo({
-      success: (data) => {
-        console.log('getuserinfo', data);
-        this.setData({ userInfo: data.userInfo });
-      },
+    //获取mock数据
+    this.setData({
+      moviedata: movie.data.data,
     })
-    wx.getSetting({
-      success: (data) => {
-        console.log('getsetting', data)
-        if (data.authSetting["scope.userInfo"]) {
-          //授权
-          this.setData({
-            isShow: false
-          });
-        }
-        else {
-          //未授权
-          this.setData({
-            isShow: true
-          });
-        }
-      },
-    })
-  },
-
-  get (data) {
-    if (data.detail.rawData) {
-      //点击允许，刷新
-      this.getSetting();
-    }
+    console.log(this.data.moviedata)
+    appDatas.data.movies = movie.data.data;
   },
 
   /**

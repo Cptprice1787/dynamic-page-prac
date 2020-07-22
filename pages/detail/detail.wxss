@@ -1,1 +1,80 @@
-/* pages/detail/detail.wxss */
+page{
+  background-color: #eee;
+  height: 100%;
+
+}
+.background{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.headimg{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20rpx;
+}
+.header{
+  margin: 10rpx auto auto 13rpx;
+  display: flex;
+}
+.avatar{
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: middle;
+  margin-right: 30rpx;
+}
+.userId{
+  margin-right: 15rpx;
+}
+.info{
+  font-size: 32rpx;
+  font-family: sans-serif;
+}
+.title{
+  font-weight: 600;
+  font-size: 38rpx;
+  margin: 15rpx auto 15rpx 13rpx;
+}
+.operate_f{
+  position: relative;
+}
+.operate{
+  float: right;
+  height: auto;
+  margin-right: 60rpx;
+  width: auto;
+}
+.star , .share{
+  height: 75rpx;
+  width: 75rpx;
+  margin-left: 7rpx;
+}
+.gap{
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  left: 5%;
+  top: 37.5rpx;
+  background-color: gray;
+  z-index: -99;
+}
+.content{
+  margin: 20rpx 15rpx 75rpx;
+  text-indent: 32rpx;
+  font-size: 32rpx;
+  text-align:justify;
+}
+.repost{
+  width: auto;
+  height: auto;
+  margin: 0 auto 35rpx;
+  padding-bottom:  45rpx;
+}
+.music{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}

@@ -19,8 +19,15 @@ Page({
   },
 
   toDetail (event) {
-    console.log('event',event);       //传入点击事件信息
+    console.log('event', event);       //传入点击事件信息
     let index = event.currentTarget.dataset.index;    //获取index索引
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index,
+    })
+  },
+  swiperToDetail (event) {
+    console.log('event', event);       //传入点击事件信息
+    let index = event.target.dataset.number;    //获取index索引
     wx.navigateTo({
       url: '/pages/detail/detail?index=' + index,
     })

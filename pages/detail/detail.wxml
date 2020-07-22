@@ -1,15 +1,20 @@
 <view class="background">
-  <view class="player"></view>
+  <image class="headimg" src="{{musicPlay?detail.music.coverImgUrl : detail.detail_img}}"></image>
+  <image class="music" catchtap="playMusic" src="{{musicPlay?'/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>
   <view class="header">
-    <image class="avatar" src=""></image>
-    <view class="userId"></view>
-    <view class="info"></view>
+    <image class="avatar" src="{{detail.avatar}}"></image>
+    <view class="userId">{{detail.author}}</view>
+    <view class="info">发布于 {{detail.date}}</view>
   </view>
-  <view class="title"></view>
-  <view class="operate">
-    <image class="star"></image>
-    <image class=""></image>
+  <view class="title">{{detail.title}}</view>
+  <view class="operate_f">
+    <view class="operate">
+      <image class="star" catchtap="collect" wx:if="{{!isCollected}}" src="/images/icon/collection-anti.png"></image>
+      <image class="star" catchtap="collect" wx:if="{{isCollected}}" src="/images/icon/collection.png"></image>
+      <image class="share" catchtap="share" src="/images/icon/share.png"></image>
+    </view>
+    <view class="gap"></view>
   </view>
-  <view class="content"></view>
-  <button class="repost">转发此文章</button>
+  <view class="content">{{detail.detail_content}}</view>
+  <button class="repost" open-type="share">转发此文章</button>
 </view>

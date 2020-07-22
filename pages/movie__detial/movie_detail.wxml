@@ -1,0 +1,11 @@
+<!--pages/movie__detial/movie_detail.wxml-->
+<view class="background">
+  <image class="movieImg" src="{{movieDetail.logo}}"></image>
+  <text class="title">{{movieDetail.name}}</text>
+  <view class="detail">
+  <text class="rating">评分：{{movieDetail.rating}}</text>
+  <text class="director">导演：{{movieDetail.director}}</text>
+  <text class="actors">主演：{{movieDetail.actors}}</text>
+  </view>
+  <button class="watch">我要观影</button>
+</view>
